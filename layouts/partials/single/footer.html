@@ -76,10 +76,18 @@
             {{- $nextPage = .NextInSection -}}
         {{- end -}}
         {{- with $prevPage -}}
+            {{ if .Params.external_url }}
+            <a href="{{ .Params.external_url }}" target="_blank" class="prev" rel="prev" title="{{ .Title }}"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>{{ .Title | emojify }}</a>
+            {{ else }}
             <a href="{{ .RelPermalink }}" class="prev" rel="prev" title="{{ .Title }}"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>{{ .Title | emojify }}</a>
+            {{ end }}
         {{- end -}}
         {{ with $nextPage }}
+            {{ if.Params.external_url }}
+            <a href="{{.Params.external_url }}" target="_blank" class="next" rel="next" title="{{.Title }}">{{.Title | emojify }}<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a>
+            {{ else }}
             <a href="{{ .RelPermalink }}" class="next" rel="next" title="{{ .Title }}">{{ .Title | emojify }}<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a>
+            {{ end }}
         {{- end -}}
     </div>
 </div>
