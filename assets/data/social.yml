@@ -49,7 +49,7 @@ telegram:
 # 007: Medium
 medium:
   Weight: 7
-  Prefix: https://medium.com/
+  Prefix: https://medium.com/@
   Title: Medium
   Icon:
     Class: fab fa-medium fa-fw
@@ -569,6 +569,14 @@ rootme:
   Icon:
     Src: svg/icons/rootme.svg
 
+# 073: Malt
+malt:
+  Weight: 73
+  Prefix: https://www.malt.fr/profile/
+  Title: Malt
+  Icon:
+    Src: svg/icons/malt.svg
+
 # Phone
 phone:
   Weight: 98
@@ -593,3 +601,11 @@ rss:
   Newtab: true
   Icon:
     Class: fas fa-rss fa-fw
+ 
+# TikTok
+tiktok:
+  Weight: 101
+  Url: https://www.tiktok.com/
+  Title: TikTok
+  Icon:
+    Simpleicons: tiktok
