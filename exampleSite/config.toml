@@ -7,7 +7,7 @@ theme = "LoveIt"
 # 主题目录
 themesDir = "../.."
 
-# website title
+# website titles
 # 网站标题
 title = "LoveIt"
 
